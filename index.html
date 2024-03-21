@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPV - PhantomPurseWallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><span class="ppv">PPV</span> PhantomPurseWallet</h1>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="login.html" target="_blank" >Sign up / Log in</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact us</a></li>
+                    <li><a href="settings.html" target="_blank">Settings</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle" id="menu-toggle" onclick="showMenu()">
+                <img src="menupicture.png" alt="Menu Button">
+            </div>
+        </header>
+        
+        <!-- Wallet section -->
+        <div class="wallet-section" id="wallet-section">
+            <div class="wallet-info">
+                <p>Welcome, <span id="user-welcome">Guest</span>!</p>
+                <p>Balance: <span id="balance">0 BTC</span></p>
+                <p>Address: <span id="address">Your Bitcoin Address</span></p>
+            </div>
+            <div class="transaction">
+                <label for="amount">Amount (BTC):</label>
+                <input type="text" id="amount">
+                <button onclick="sendBitcoin()">Send Bitcoin</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
